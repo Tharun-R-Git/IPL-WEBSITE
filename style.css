@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 100px; 
+    
+}
+
+.nav-bar{
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+    background-color: rgb(0, 0, 81); ;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: 3px solid rgb(188, 131, 25);
+    align-items: center;
+    padding: 10px;    
+}
+
+.logo{
+    width: 100px;
+    height: 50px;  
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(152, 99, 0);
+    padding: 3px 12px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-btn{
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 3px solid rgb(0, 0, 255);
+    background-color: rgb(0, 0, 81);    
+
+}
+
+.nav-btn a{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.nav-btn:hover{
+    background-color: rgb(0, 30, 91);
+    
+    
+}
+
+.logo img:hover{
+    background-color: orange;
+}
+
+.nav-btn a:hover{
+    color: orange;
+}
+
+.about-event{
+    height: 730px;
+    border-bottom: 3px solid rgb(0, 0, 109);
+}
+
+.teams,.tickets,.schedule{
+    background-color: lightblue;
+    height: fit-content;
+    padding: 40px;
+    border-bottom: 3px solid rgb(0, 0, 109);
+
+}
+
+h3 span{
+    background-color: rgb(0, 0, 109);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    border: 3px solid rgb(0, 153, 255);
+    margin-bottom: 20px;
+    
+}
+
+.team-card{
+    height: 350px;
+    width: 270px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 81);
+    margin-bottom: 10px;
+    margin-top: 40px;
+    border: 1px solid rgb(0, 145, 255);
+    padding: 10px;
+    box-shadow: 6px 6px 6px 0px rgba(45, 45, 45, 0.75);
+}
+
+.team-card:hover,.ticket-type:hover{
+    -webkit-transform: scale(1.03,1.03);
+    -webkit-transition: 0.3s;
+}
+.team-list{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.team-logo{
+    height: 50%;
+    width: 100%;
+}
+
+.team-logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid lightblue;
+}
+
+.team-name h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: orange;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+.team-desc p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+.checked {
+    color: orange;
+}
+
+.team-star{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 25px;
+}
+.ticket-container{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.mode{
+    background-color:  rgb(0, 0, 81);
+    border-radius: 15px;
+    height: 800px;
+    width: 700px;
+    border: 3px solid orange;
+}
+
+.ticket-type{
+    width: 500px;
+    height: 180px;
+    border: 3px solid orange;
+    border-radius: 15px;  
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(45, 45, 45, 0.75);
+}
+
+#gold{
+    background-color: rgb(150, 128, 0);
+}
+
+#silver{
+    background-color: rgb(130, 130, 130);
+}
+
+#bronze{
+    background-color: lightblue;
+}
+
+.ticket-img{
+    width: 25%;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    height: 70%;
+}
+
+.ticket-img img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.ticket-details{
+    width: 60%;
+    margin: 10px;
+    border-radius: 8px;
+    border: 2px solid orange;
+    height: 100%;
+}
+
+.ticket{
+    background-color: rgb(0, 0, 109);
+    padding: 5px 10px;
+    border: 2px solid orange;
+}
+
+.price{
+    margin: 10px;
+    background-color: rgb(0, 0, 109);
+    border-radius: 6px;
+    border: 2px solid orange;
+    width: fit-content;
+}
+
+.price h3{
+    color: orange;
+    padding: 5px 5px;
+}
+
+.btn,.butn{
+    color: orange;
+    background-color: rgb(0, 0, 109);
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: 2px solid white;
+    
+}
+
+.butn:hover{
+    cursor: pointer;
+    background-color: rgb(31, 31, 186);
+    color: white;
+    font-weight: bolder;
+}
+
+.footer-class{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(0, 0, 81);
+    color: white;
+}
+
+.footer-class h3{
+    padding: 20px;
+}
+
+.footer-class h4{
+    padding: 5px 20px;
+}
+
+.footer-class p{
+    padding: 0px 20px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.telephone ul{
+    list-style: "📞 ";
+}
+
+.links{
+    padding-right: 60px;
+}
+
+.links a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.links a:hover{
+    color:rgb(0, 129, 227);
+}
+
+#gold{
+    background-image: url(GOLD.jpg);
+}
+
+#silver{
+    background-image: url(silver.jpg);
+}
+
+#bronze{
+    background-image: url(bronze.jpg);
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+table{
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+table th, td {
+    border: 2px solid rgb(0, 0, 81);
+    padding: 8px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+table td{
+    background-color: rgb(255, 193, 7);
+}
+
+/* table td:hover{
+    background-color: rgb(255, 211, 77);
+} */
+
+table th{
+    background-color: rgb(26, 26, 102);
+    color: white;
+}
+
+table th:hover{
+    background-color: rgb(31, 31, 145);
+}
+
+.about-event{
+    background-image: url(BGIMG.avif);
+    opacity: 0.95;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.title{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title h6{
+    position: absolute;
+    color: rgb(0, 0, 74);
+    margin-top: 15%;
+    font-size: 90px;
+    opacity: 0.9;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 255, 229);
+    text-shadow: 10px 10px 6px rgb(7, 8, 8);
+}
+
+
